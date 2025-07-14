@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sobre | Juliana Medeiros Estética</title>
-  <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png">
+  <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -93,10 +93,68 @@
       background: #fff;
       border-radius: 8px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
     }
 
-    h1, h2 {
-      color: #ff69b4;
+    .titulo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #c71585;
+      margin-bottom: 20px;
+    }
+
+    .sobre-imagem {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      margin: 0 auto 20px;
+      display: block;
+    }
+
+    .topicos {
+      text-align: left;
+      max-width: 600px;
+      margin: 0 auto 30px;
+    }
+
+    .topicos ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .topicos ul li {
+      margin-bottom: 8px;
+    }
+
+    .citacao {
+      max-width: 700px;
+      margin: 0 auto;
+      font-style: italic;
+      color: #666;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      border-left: 4px solid #c71585;
+      padding-left: 16px;
+    }
+
+    /* Espaço para o carrossel */
+    .carrossel {
+      max-width: 900px;
+      margin: 40px auto 60px;
+      height: 300px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 1.3rem;
+      user-select: none;
     }
 
     footer {
@@ -105,6 +163,7 @@
       padding: 20px;
       color: #fff;
     }
+
   </style>
 </head>
 <body>
@@ -115,7 +174,7 @@
   </div>
 
   <div class="header">
-    <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo">
+    <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo" />
   </div>
 
   <nav>
@@ -129,8 +188,29 @@
   </nav>
 
   <div class="container">
-    <h1>Sobre a Profissional</h1>
-    <p>Dra. Juliana Medeiros é especialista em estética avançada, com ampla formação e experiência em procedimentos faciais e corporais.</p>
+    <div class="titulo">Dra. Juliana Medeiros</div>
+
+    <img src="https://i.imgur.com/2guRs0j.jpg" alt="Foto Dra. Juliana Medeiros" class="sobre-imagem" />
+
+    <div class="topicos">
+      <ul>
+        <li>Esteticista e Cosmetóloga;</li>
+        <li>Pós Graduanda em Estética Avançada, Harmonização e Injetáveis;</li>
+        <li>Especialista em Peles Acneicas e Cicatrizes de Acne;</li>
+        <li>Epecialista em Procedimentos Intradérmicos e Remoção de Sinais;</li>
+        <li>Especialista em Sobrancelhas e Micropigmentaçāo;</li>
+        <li>Formação Individualizada no Tratamento para Estrias e Pós Parto;</li>
+      </ul>
+    </div>
+
+    <blockquote class="citacao">
+      Busco em meus atendimentos muito mais que proporcionar estética e beleza, quero que meus pacientes sintam-se satisfeitos e acolhidos. A Estética não é apenas beleza, é saúde e autocuidado. Cuidar da saúde da pele vai além da estética e manter a pele saudável é fundamental para ter uma boa autoestima. Meu desejo é que meus pacientes vivam essa experiência, sempre acolhendo-os com um sorriso largo e um atendimento humanizado.
+    </blockquote>
+
+    <div class="carrossel">
+      <!-- Espaço para carrossel de imagens. Pode ser implementado com JavaScript/slider externo -->
+      Carrossel de imagens aqui
+    </div>
   </div>
 
   <footer>
