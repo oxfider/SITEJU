@@ -86,15 +86,6 @@
       text-decoration: underline;
     }
 
-    .container {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-
     .banner-imagem {
       display: flex;
       justify-content: center;
@@ -121,12 +112,27 @@
       border: 2px solid #ffc0cb;
       border-radius: 8px;
       padding: 20px;
+      position: relative;
     }
 
     .categoria h3 {
       margin-top: 0;
       color: #c71585;
       cursor: pointer;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .categoria h3::before {
+      content: "▶";
+      position: absolute;
+      left: 0;
+      top: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .categoria:hover h3::before {
+      content: "▼";
     }
 
     .lista {
@@ -134,13 +140,13 @@
       margin-top: 10px;
     }
 
+    .categoria:hover .lista {
+      display: block;
+    }
+
     .lista ul {
       padding-left: 20px;
       margin: 0;
-    }
-
-    .lista.mostrar {
-      display: block;
     }
 
     footer {
@@ -150,12 +156,6 @@
       color: #fff;
     }
   </style>
-  <script>
-    function toggleLista(id) {
-      const lista = document.getElementById(id);
-      lista.classList.toggle("mostrar");
-    }
-  </script>
 </head>
 <body>
   <div class="top-banner">
@@ -184,8 +184,8 @@
 
   <div class="categorias">
     <div class="categoria">
-      <h3 onclick="toggleLista('harmonizacao')">Harmonização Facial</h3>
-      <div class="lista" id="harmonizacao">
+      <h3>Harmonização Facial</h3>
+      <div class="lista">
         <ul>
           <li>Toxina Botulínica | Botox</li>
           <li>Skinbooster Facial</li>
@@ -195,8 +195,8 @@
     </div>
 
     <div class="categoria">
-      <h3 onclick="toggleLista('faciais')">Tratamentos Faciais</h3>
-      <div class="lista" id="faciais">
+      <h3>Tratamentos Faciais</h3>
+      <div class="lista">
         <ul>
           <li>Limpeza de Pele Biofotônica</li>
           <li>Limpeza de Pele + Peeling de Diamante</li>
@@ -220,8 +220,8 @@
     </div>
 
     <div class="categoria">
-      <h3 onclick="toggleLista('corporais')">Tratamentos Corporais</h3>
-      <div class="lista" id="corporais">
+      <h3>Tratamentos Corporais</h3>
+      <div class="lista">
         <ul>
           <li>PEIM</li>
           <li>Mesoterapia</li>
@@ -244,8 +244,8 @@
     </div>
 
     <div class="categoria">
-      <h3 onclick="toggleLista('massagens')">Massagens</h3>
-      <div class="lista" id="massagens">
+      <h3>Massagens</h3>
+      <div class="lista">
         <ul>
           <li>Drenagem Linfática</li>
           <li>Massagem Relaxante</li>
@@ -255,8 +255,8 @@
     </div>
 
     <div class="categoria">
-      <h3 onclick="toggleLista('sobrancelhas')">Sobrancelhas</h3>
-      <div class="lista" id="sobrancelhas">
+      <h3>Sobrancelhas</h3>
+      <div class="lista">
         <ul>
           <li>Design de Sobrancelhas</li>
           <li>Micropigmentação</li>
