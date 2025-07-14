@@ -1,30 +1,207 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Início - Juliana Medeiros Estética Avançada</title>
-    <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juliana Medeiros Estética Avançada</title>
+
+    <!-- SEO Básico -->
+    <meta name="description" content="Clínica Juliana Medeiros - Estética Avançada em Parnamirim-RN. Tratamentos faciais e corporais de alto padrão.">
+
+    <!-- Open Graph (para WhatsApp, Facebook, LinkedIn) -->
+    <meta property="og:title" content="Juliana Medeiros Estética Avançada">
+    <meta property="og:description" content="Clínica Estética com foco em resultados e bem-estar.">
+    <meta property="og:image" content="https://i.imgur.com/ks46NO6.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Top Banner Button */
+        .top-banner {
+            background-color: #ff69b4;
+            text-align: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+        }
+        .top-banner a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 10px 20px;
+            background-color: #c71585;
+            border-radius: 30px;
+            transition: background 0.3s ease;
+        }
+        .top-banner a:hover {
+            background-color: #a0136a;
+        }
+
+        header {
+            background-color: #ffc0cb;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+        }
+        header img.logo {
+            width: 100%;
+            max-width: 1000px;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            background-color: #ffb6c1;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            display: inline-block;
+            padding: 15px 10px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+        section {
+            background-color: #fff;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #ff69b4;
+        }
+        #servicos ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ffc0cb;
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+        }
+
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+    </style>
 </head>
 <body>
+
+    <!-- BOTÃO FIXO NO TOPO -->
+    <div class="top-banner">
+        <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%25C3%25A1%252C%2520eu%2520te%2520encontrei%2520no%2520Google%2520e%2520gostaria%2520de%2520informa%25C3%25A7%25C3%25B5es&sa=D&sntz=1&usg=AOvVaw3jYm3aTcYVny5KbQGuoTfB" target="_blank">
+            AGENDE JÁ A SUA CONSULTA
+        </a>
+    </div>
+
     <header>
-        <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo" />
+        <img src="https://i.imgur.com/e6Rv6Cm.jpg" alt="Logo Juliana Medeiros" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="depoimentos.html">Depoimentos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
 
     <div class="container">
-        <h2>Início</h2>
-        <p>Clínica Estética Juliana Medeiros localizada em Nova Parnamirim, referência em tratamentos estéticos avançados com foco em saúde, bem-estar e autoestima. Equipamentos de ponta e ambiente acolhedor para resultados reais e duradouros.</p>
+        <section id="inicio">
+            <h2>Início</h2>
+            <p>Clínica Estética Juliana Medeiros localizada em Nova Parnamirim, referência em tratamentos estéticos avançados com foco em saúde, bem-estar e autoestima. Equipamentos de ponta e ambiente acolhedor para resultados reais e duradouros.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul>
+                <li>Botox</li>
+                <li>Skinbooster</li>
+                <li>Bioestimuladores</li>
+                <li>Limpeza de Pele</li>
+                <li>Peelings</li>
+                <li>Epilação a Linha e Cera</li>
+                <li>Radiofrequência</li>
+                <li>Microagulhamento</li>
+                <li>Remoção de Sinais</li>
+                <li>Tratamentos para Acne, Melasma e Cicatrizes</li>
+                <li>Mesoterapia e Lipoenzimática</li>
+                <li>Massagens Modeladora e Drenagem</li>
+                <li>Micropigmentação e Design de Sobrancelha</li>
+            </ul>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre</h2>
+            <p>Dra. Juliana Medeiros é Esteticista e Cosmetóloga, especialista em peles acneicas, procedimentos injetáveis e tratamentos estéticos avançados. Com atendimento humanizado, oferece uma experiência acolhedora e personalizada para cada paciente.</p>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <p>“Melhor clínica que já fui! Atendimento impecável!” – Cliente Satisfeita</p>
+            <p>“Resultados visíveis desde a primeira sessão!” – Cliente Feliz</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5584999262794" target="_blank">(84) 99926-2794</a></p>
+            <p><strong>Atendimento:</strong> Ter a Sáb, 9h - 19h | Domingo: fechado</p>
+            <p><strong>Endereço:</strong> <a href="https://www.google.com/maps?q=Av.+Maria+Lacerda+Montenegro,+2074,+Nova+Parnamirim" target="_blank">Av. Maria Lacerda Montenegro, 2074 - Parnamirim/RN</a></p>
+        </section>
     </div>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a href="https://wa.me/5584999262794" class="whatsapp-btn" target="_blank">
+        <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+    </a>
 
     <footer>
         <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
