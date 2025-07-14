@@ -121,6 +121,7 @@
     }
 
     .carrossel {
+      position: relative;
       max-width: 600px;
       margin: 40px auto;
     }
@@ -129,6 +130,32 @@
       width: 100%;
       height: auto;
       border-radius: 8px;
+    }
+
+    .carrossel button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 105, 180, 0.8);
+      border: none;
+      color: white;
+      font-size: 24px;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      z-index: 2;
+    }
+
+    .carrossel button:hover {
+      background-color: rgba(199, 21, 133, 0.9);
+    }
+
+    .carrossel .prev {
+      left: 10px;
+    }
+
+    .carrossel .next {
+      right: 10px;
     }
 
     footer {
@@ -179,7 +206,9 @@
     </div>
 
     <div class="carrossel">
+      <button class="prev" onclick="mudarSlide(-1)">‹</button>
       <img id="slide" src="https://i.imgur.com/DAgGrj3.jpg" alt="Carrossel">
+      <button class="next" onclick="mudarSlide(1)">›</button>
     </div>
   </div>
 
@@ -196,12 +225,17 @@
       'https://i.imgur.com/GGDWymp.jpg',
       'https://i.imgur.com/aUKs2at.jpg'
     ];
+
     let indice = 0;
-    const slide = document.getElementById(\"slide\");
+    const slide = document.getElementById("slide");
+
+    function mudarSlide(direcao) {
+      indice = (indice + direcao + imagens.length) % imagens.length;
+      slide.src = imagens[indice];
+    }
 
     setInterval(() => {
-      indice = (indice + 1) % imagens.length;
-      slide.src = imagens[indice];
+      mudarSlide(1);
     }, 5000);
   </script>
 </body>
