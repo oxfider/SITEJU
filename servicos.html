@@ -1,47 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Serviços - Juliana Medeiros Estética Avançada</title>
-    <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serviços | Juliana Medeiros Estética</title>
+  <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { background-color: #ffc0cb; text-align: center; }
+    header img.logo { width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto; }
+    nav ul { padding: 0; list-style: none; background-color: #ffb6c1; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; }
+    nav ul li { margin: 0 10px; }
+    nav ul li a { display: inline-block; padding: 15px 10px; color: #fff; text-decoration: none; font-weight: bold; }
+    nav ul li a:hover { text-decoration: underline; }
+    .top-banner { background-color: #ff69b4; text-align: center; padding: 10px 0; position: sticky; top: 0; z-index: 9999; }
+    .top-banner a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; background-color: #c71585; border-radius: 30px; transition: background 0.3s ease; }
+    .top-banner a:hover { background-color: #a0136a; }
+    .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px; margin-bottom: 20px; border-radius: 8px; }
+    h1, h2 { color: #ff69b4; }
+    ul.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 10px; padding: 0; list-style: none; }
+    footer { background-color: #ffc0cb; text-align: center; padding: 20px; color: #fff; }
+    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+  </style>
 </head>
 <body>
-    <header>
-        <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo" />
-    </header>
+  <div class="top-banner">
+    <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">
+      AGENDE JÁ A SUA CONSULTA
+    </a>
+  </div>
+
+  <header>
+    <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo">
     <nav>
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="servicos.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="depoimentos.html">Depoimentos</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="servicos.html">Serviços</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="depoimentos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
     </nav>
+  </header>
 
-    <div class="container">
-        <h2>Serviços</h2>
-        <ul class="servicos-list">
-            <li>Botox</li>
-            <li>Skinbooster</li>
-            <li>Bioestimuladores</li>
-            <li>Limpeza de Pele</li>
-            <li>Peelings</li>
-            <li>Epilação a Linha e Cera</li>
-            <li>Radiofrequência</li>
-            <li>Microagulhamento</li>
-            <li>Remoção de Sinais</li>
-            <li>Tratamentos para Acne, Melasma e Cicatrizes</li>
-            <li>Mesoterapia e Lipoenzimática</li>
-            <li>Massagens Modeladora e Drenagem</li>
-            <li>Micropigmentação e Design de Sobrancelha</li>
-        </ul>
-    </div>
+  <div class="container">
+    <h1>Serviços</h1>
+    <ul class="grid">
+      <li>Botox</li>
+      <li>Skinbooster</li>
+      <li>Bioestimuladores</li>
+      <li>Limpeza de Pele</li>
+      <li>Peelings</li>
+      <li>Epilação a Linha e Cera</li>
+      <li>Radiofrequência</li>
+      <li>Microagulhamento</li>
+      <li>Remoção de Sinais</li>
+      <li>Tratamentos para Acne, Melasma e Cicatrizes</li>
+      <li>Mesoterapia e Lipoenzimática</li>
+      <li>Massagens Modeladora e Drenagem</li>
+      <li>Micropigmentação e Design de Sobrancelha</li>
+    </ul>
+  </div>
 
-    <footer>
-        <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
-    </footer>
+  <a href="https://wa.me/5584999262794" class="whatsapp-btn" target="_blank">
+    <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
