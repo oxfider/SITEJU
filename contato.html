@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contato | Juliana Medeiros Estética</title>
   <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png" />
   <style>
@@ -99,31 +99,31 @@
       color: #ff69b4;
     }
 
+    #map {
+      margin: 20px auto;
+      max-width: 1000px;
+      height: 400px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
     footer {
       background-color: #ffc0cb;
       text-align: center;
       padding: 20px;
       color: #fff;
     }
-
-    iframe {
-      border: 0;
-      border-radius: 8px;
-      width: 100%;
-      height: 400px;
-      margin-top: 20px;
-    }
   </style>
 </head>
 <body>
   <div class="top-banner">
-    <a href="https://api.whatsapp.com/send?phone=5584999262794&text=Ol%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">
+    <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank" rel="noopener noreferrer">
       AGENDE JÁ A SUA CONSULTA
     </a>
   </div>
 
   <div class="header">
-    <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo">
+    <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo" />
   </div>
 
   <nav>
@@ -138,19 +138,29 @@
 
   <div class="container">
     <h1>Fale Conosco</h1>
-    <p><strong>WhatsApp:</strong> (84) 99926-2794</p>
-    <p><strong>Endereço:</strong> Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
-    <p><strong>CEP:</strong> 59152-600</p>
-    <p><strong>Horário de Atendimento:</strong> Terça a Sábado das 9h às 19h</p>
-
-    <!-- Mapa incorporado do Google -->
-    <iframe 
-      src="https://www.google.com/maps?q=Av.+Maria+Lacerda+Montenegro,+2074,+Nova+Parnamirim,+Parnamirim+-+RN,+59152-600&output=embed"
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
+    <p>Entre em contato pelo WhatsApp: (84) 99926-2794</p>
+    <p>Endereço: Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
+    <p>CEP: 59152-600</p>
+    <p>Horário de Atendimento: Terça a Sábado das 9h às 19h</p>
   </div>
+
+  <div id="map"></div>
+
+  <script>
+    function initMap() {
+      const endereco = { lat: -5.9251, lng: -35.2349 }; // Coordenadas aproximadas da Av. Maria Lacerda Montenegro, 2074, Parnamirim RN
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: endereco,
+      });
+      const marker = new google.maps.Marker({
+        position: endereco,
+        map: map,
+        title: "Juliana Medeiros Estética",
+      });
+    }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
 
   <footer>
     <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
