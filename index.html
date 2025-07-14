@@ -11,10 +11,9 @@
       margin: 0;
       background: #f4f4f4;
       color: #333;
-      padding-top: 130px; /* apenas para o botão e menu fixo */
+      padding-top: 190px;
     }
 
-    /* Botão superior fixo */
     .top-banner {
       background-color: #ff69b4;
       text-align: center;
@@ -40,10 +39,10 @@
       background-color: #a0136a;
     }
 
-    /* Logo e menu (agora NÃO são fixos) */
     .header {
       background-color: #ffc0cb;
       padding-bottom: 10px;
+      text-align: center;
     }
 
     .header img.logo {
@@ -51,11 +50,15 @@
       width: 100%;
       height: auto;
       display: block;
-      margin: 10px auto 0 auto;
+      margin: 10px auto;
     }
 
     nav {
       background-color: #ffb6c1;
+      position: fixed;
+      top: 58px;
+      width: 100%;
+      z-index: 9999;
     }
 
     nav ul {
@@ -83,7 +86,6 @@
       text-decoration: underline;
     }
 
-    /* Tratamentos */
     .tratamentos {
       max-width: 1000px;
       margin: 20px auto;
@@ -142,6 +144,11 @@
       color: #ff69b4;
     }
 
+    .widget-container {
+      max-width: 1000px;
+      margin: 20px auto;
+    }
+
     footer {
       background-color: #ffc0cb;
       text-align: center;
@@ -151,29 +158,37 @@
   </style>
 </head>
 <body>
-
-  <!-- Botão suspenso -->
   <div class="top-banner">
     <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">
       AGENDE JÁ A SUA CONSULTA
     </a>
   </div>
 
-  <!-- Cabeçalho (não fixo) -->
   <div class="header">
     <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="depoimentos.html">Depoimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
   </div>
 
-  <!-- Seção Nossos Tratamentos -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="depoimentos.html">Depoimentos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Bem-vindo(a) à Juliana Medeiros Estética Avançada</h1>
+    <p>Clínica Estética Juliana Medeiros fica localizada no bairro Nova Parnamirim, em Parnamirim - RN, e é referência em tratamentos estéticos de alta qualidade. Com uma abordagem humanizada, o foco é transformar a vida dos pacientes por meio do realce da beleza individual e oferecer soluções avançadas e seguras.</p>
+    <p>A sua saúde e bem-estar são prioridades em nossos tratamentos, por isso, utilizamos equipamentos e dermocosméticos das melhores marcas, proporcionando uma estética de resultados e de alto padrão. Temos as melhores opções em tratamentos faciais e corporais e um ambiente moderno e aconchegante. Um espaço único, que une o melhor da Saúde e Estética.</p>
+  </div>
+
+  <div class="widget-container">
+    <div class="tagembed-widget" style="width:100%;height:100%;overflow:auto;" data-widget-id="292278" website="1"></div>
+    <script src="https://widget.tagembed.com/embed.min.js" type="text/javascript"></script>
+  </div>
+
   <div class="tratamentos">
     <h2>NOSSOS TRATAMENTOS</h2>
     <div class="galeria">
@@ -200,17 +215,8 @@
     </div>
   </div>
 
-  <!-- Conteúdo principal -->
-  <div class="container">
-    <h1>Bem-vindo(a) à Juliana Medeiros Estética Avançada</h1>
-    <p>Clínica Estética Juliana Medeiros fica localizada no bairro Nova Parnamirim, em Parnamirim - RN, e é referência em tratamentos estéticos de alta qualidade. Com uma abordagem humanizada, o foco é transformar a vida dos pacientes por meio do realce da beleza individual e oferecer soluções avançadas e seguras.</p>
-    <p>A sua saúde e bem-estar são prioridades em nossos tratamentos, por isso, utilizamos equipamentos e dermocosméticos das melhores marcas, proporcionando uma estética de resultados e de alto padrão. Temos as melhores opções em tratamentos faciais e corporais e um ambiente moderno e aconchegante. Um espaço único, que une o melhor da Saúde e Estética.</p>
-  </div>
-
-  <!-- Rodapé -->
   <footer>
     <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
   </footer>
-
 </body>
 </html>
