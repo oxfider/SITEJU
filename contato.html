@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contato | Juliana Medeiros Estética</title>
-  <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png">
+  <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -95,23 +95,8 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    h1 {
+    h1, h2 {
       color: #ff69b4;
-      text-align: center;
-    }
-
-    .contato-info {
-      font-size: 1.1rem;
-      line-height: 1.8;
-      padding: 0 20px;
-    }
-
-    .contato-info p {
-      margin: 12px 0;
-    }
-
-    .contato-info span {
-      font-weight: bold;
     }
 
     footer {
@@ -121,10 +106,12 @@
       color: #fff;
     }
 
-    @media (max-width: 600px) {
-      .contato-info {
-        padding: 0;
-      }
+    iframe {
+      border: 0;
+      border-radius: 8px;
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
     }
   </style>
 </head>
@@ -151,12 +138,18 @@
 
   <div class="container">
     <h1>Fale Conosco</h1>
-    <div class="contato-info">
-      <p><span>📞 WhatsApp:</span> <a href="https://api.whatsapp.com/send?phone=5584999262794" target="_blank">(84) 99926-2794</a></p>
-      <p><span>📍 Endereço:</span> Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
-      <p><span>📫 CEP:</span> 59152-600</p>
-      <p><span>⏰ Atendimento:</span> Terça a Sábado das 9h às 19h</p>
-    </div>
+    <p><strong>WhatsApp:</strong> (84) 99926-2794</p>
+    <p><strong>Endereço:</strong> Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
+    <p><strong>CEP:</strong> 59152-600</p>
+    <p><strong>Horário de Atendimento:</strong> Terça a Sábado das 9h às 19h</p>
+
+    <!-- Mapa incorporado do Google -->
+    <iframe 
+      src="https://www.google.com/maps?q=Av.+Maria+Lacerda+Montenegro,+2074,+Nova+Parnamirim,+Parnamirim+-+RN,+59152-600&output=embed"
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
   </div>
 
   <footer>
