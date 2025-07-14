@@ -6,23 +6,105 @@
   <title>Contato | Juliana Medeiros Estética</title>
   <link rel="icon" href="https://i.imgur.com/ZBPGeeE.png" type="image/png">
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
-    header { background-color: #ffc0cb; text-align: center; }
-    header img.logo { width: 100%; max-width: 1000px; height: auto; display: block; margin: 0 auto; }
-    nav ul { padding: 0; list-style: none; background-color: #ffb6c1; margin: 0; display: flex; justify-content: center; flex-wrap: wrap; }
-    nav ul li { margin: 0 10px; }
-    nav ul li a { display: inline-block; padding: 15px 10px; color: #fff; text-decoration: none; font-weight: bold; }
-    nav ul li a:hover { text-decoration: underline; }
-    .top-banner { background-color: #ff69b4; text-align: center; padding: 10px 0; position: sticky; top: 0; z-index: 9999; }
-    .top-banner a { color: white; text-decoration: none; font-weight: bold; font-size: 1.1rem; padding: 10px 20px; background-color: #c71585; border-radius: 30px; transition: background 0.3s ease; }
-    .top-banner a:hover { background-color: #a0136a; }
-    .container { max-width: 1000px; margin: auto; padding: 20px; background: #fff; box-shadow: 0 0 10px rgba(0,0,0,0.1); margin-top: 20px; margin-bottom: 20px; border-radius: 8px; }
-    h1, h2 { color: #ff69b4; }
-    p { line-height: 1.5; }
-    a.link { color: #c71585; text-decoration: none; font-weight: bold; }
-    a.link:hover { text-decoration: underline; }
-    footer { background-color: #ffc0cb; text-align: center; padding: 20px; color: #fff; }
-    .whatsapp-btn { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding-top: 120px;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    .top-banner {
+      background-color: #ff69b4;
+      text-align: center;
+      padding: 12px 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 10000;
+    }
+
+    .top-banner a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.15rem;
+      padding: 12px 28px;
+      background-color: #c71585;
+      border-radius: 30px;
+      transition: background 0.3s ease;
+    }
+
+    .top-banner a:hover {
+      background-color: #a0136a;
+    }
+
+    .header {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 20px 0 10px;
+    }
+
+    .header img.logo {
+      max-width: 1200px;
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: #ffb6c1;
+      position: fixed;
+      top: 58px;
+      width: 100%;
+      z-index: 9999;
+    }
+
+    nav ul {
+      padding: 0;
+      list-style: none;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      margin: 0 10px;
+    }
+
+    nav ul li a {
+      display: inline-block;
+      padding: 14px 12px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1, h2 {
+      color: #ff69b4;
+    }
+
+    footer {
+      background-color: #ffc0cb;
+      text-align: center;
+      padding: 20px;
+      color: #fff;
+    }
   </style>
 </head>
 <body>
@@ -32,31 +114,27 @@
     </a>
   </div>
 
-  <header>
+  <div class="header">
     <img src="https://i.imgur.com/ks46NO6.jpg" alt="Logo Juliana Medeiros" class="logo">
-    <nav>
-      <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="servicos.html">Serviços</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="depoimentos.html">Depoimentos</a></li>
-        <li><a href="contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <div class="container">
-    <h1>Contato</h1>
-    <p><strong>WhatsApp:</strong> <a class="link" href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">(84) 99926-2794</a></p>
-    <p><strong>Atendimento:</strong> Terça a Sábado, 9h às 19h<br>Domingo: Fechado</p>
-    <p><strong>Endereço:</strong> <a class="link" href="https://www.google.com/maps?q=Av.+Maria+Lacerda+Montenegro,+2074,+Nova+Parnamirim" target="_blank">
-      Av. Maria Lacerda Montenegro, 2074 - Nova Parnamirim, Parnamirim/RN</a></p>
-    <p><strong>CEP:</strong> 59152-600</p>
   </div>
 
-  <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" class="whatsapp-btn" target="_blank">
-    <img src="https://img.icons8.com/color/48/whatsapp.png" alt="WhatsApp">
-  </a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="servicos.html">Serviços</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="depoimentos.html">Depoimentos</a></li>
+      <li><a href="contato.html">Contato</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h1>Fale Conosco</h1>
+    <p>Entre em contato pelo WhatsApp: (84) 99926-2794</p>
+    <p>Endereço: Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
+    <p>CEP: 59152-600</p>
+    <p>Horário de Atendimento: Terça a Sábado das 9h às 19h</p>
+  </div>
 
   <footer>
     <p>&copy; 2025 Juliana Medeiros Estética Avançada. Todos os direitos reservados.</p>
