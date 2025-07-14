@@ -95,8 +95,23 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    h1, h2 {
+    h1 {
       color: #ff69b4;
+      text-align: center;
+    }
+
+    .contato-info {
+      font-size: 1.1rem;
+      line-height: 1.8;
+      padding: 0 20px;
+    }
+
+    .contato-info p {
+      margin: 12px 0;
+    }
+
+    .contato-info span {
+      font-weight: bold;
     }
 
     footer {
@@ -105,11 +120,17 @@
       padding: 20px;
       color: #fff;
     }
+
+    @media (max-width: 600px) {
+      .contato-info {
+        padding: 0;
+      }
+    }
   </style>
 </head>
 <body>
   <div class="top-banner">
-    <a href="https://www.google.com/url?q=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5584999262794%26text%3DOl%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5584999262794&text=Ol%C3%A1%2C%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informa%C3%A7%C3%B5es" target="_blank">
       AGENDE JÁ A SUA CONSULTA
     </a>
   </div>
@@ -130,10 +151,12 @@
 
   <div class="container">
     <h1>Fale Conosco</h1>
-    <p>Entre em contato pelo WhatsApp: (84) 99926-2794</p>
-    <p>Endereço: Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
-    <p>CEP: 59152-600</p>
-    <p>Horário de Atendimento: Terça a Sábado das 9h às 19h</p>
+    <div class="contato-info">
+      <p><span>📞 WhatsApp:</span> <a href="https://api.whatsapp.com/send?phone=5584999262794" target="_blank">(84) 99926-2794</a></p>
+      <p><span>📍 Endereço:</span> Av. Maria Lacerda Montenegro, 2074, Nova Parnamirim, Parnamirim - RN</p>
+      <p><span>📫 CEP:</span> 59152-600</p>
+      <p><span>⏰ Atendimento:</span> Terça a Sábado das 9h às 19h</p>
+    </div>
   </div>
 
   <footer>
