@@ -11,11 +11,11 @@
       margin: 0;
       background: #f4f4f4;
       color: #333;
-      padding-top: 190px; /* Espaço para banner e menu fixos */
+      padding-top: 190px;
     }
 
     .top-banner {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       text-align: center;
       padding: 12px 0;
       position: fixed;
@@ -25,23 +25,24 @@
     }
 
     .top-banner a {
-  background-color: #ffc0cb;
-  color: #B22222; /* para o texto ficar visível em rosa forte */
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.15rem;
-  padding: 12px 28px;
-  border-radius: 30px;
-  transition: background 0.3s ease;
-}
+      background-color: #FFE4E1;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.15rem;
+      padding: 12px 28px;
+      border-radius: 30px;
+      transition: background 0.3s ease, color 0.3s ease;
+      display: inline-block;
+    }
 
-.top-banner a:hover {
-  background-color: #FFFFFF; /* um rosa um pouco mais forte no hover */
-  color: #a0136a;
-}
+    .top-banner a:hover {
+      background-color: #ff69b4;
+      color: #ffffff;
+    }
 
     .header {
-      background-color: #FFFFFF;
+      background-color: #ffffff;
       padding-bottom: 10px;
       text-align: center;
     }
@@ -55,11 +56,13 @@
     }
 
     nav {
-      background-color: #FFFFFF;
+      background-color: #ffb6c1;
       position: fixed;
       top: 58px;
       width: 100%;
       z-index: 9999;
+      text-align: center;
+      padding: 10px 0;
     }
 
     nav ul {
@@ -72,22 +75,24 @@
     }
 
     nav ul li {
-      margin: 0 10px;
+      margin: 0 15px;
     }
 
     nav ul li a {
       display: inline-block;
       padding: 14px 12px;
-      color: #fff;
+      color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
     nav ul li a:hover {
-      text-decoration: underline;
+      background-color: #ff69b4;
     }
 
-    /* Link ativo do menu */
     nav ul li a.ativo {
       text-decoration: underline;
       font-weight: bolder;
@@ -104,7 +109,7 @@
     }
 
     .tratamentos h2 {
-      color: #FFFFFF;
+      color: #fff;
       margin-bottom: 20px;
     }
 
@@ -130,7 +135,7 @@
       display: block;
       margin-top: 8px;
       text-decoration: none;
-      color: #c71585;
+      color: #cfff;
       font-weight: bold;
     }
 
@@ -140,7 +145,7 @@
 
     .container {
       max-width: 1000px;
-      margin: 0 auto 20px;
+      margin: 30px auto 20px;
       padding: 20px;
       background: #fff;
       border-radius: 8px;
@@ -149,11 +154,6 @@
 
     h1, h2 {
       color: #ff69b4;
-    }
-
-    /* Texto justificado */
-    .texto-justificado {
-      text-align: justify;
     }
 
     .widget-container {
@@ -167,35 +167,11 @@
       padding: 20px;
       color: #fff;
     }
-
-    @media (max-width: 768px) {
-      nav ul li {
-        margin: 10px 5px;
-      }
-
-      .item {
-        width: calc(50% - 20px);
-      }
-    }
-
-    @media (max-width: 480px) {
-      nav ul {
-        flex-direction: column;
-      }
-
-      nav ul li {
-        margin: 8px 0;
-      }
-
-      .item {
-        width: 100%;
-      }
-    }
   </style>
 </head>
 <body>
   <div class="top-banner">
-    <a href="https://api.whatsapp.com/send?phone=5584999262794&text=Olá,%20eu%20te%20encontrei%20no%20Google%20e%20gostaria%20de%20informaç%C3%B5es" target="_blank">
+    <a href="https://api.whatsapp.com/send?phone=5584999262794&text=Olá,%20eu%20te%20encontrei%20no%20Instagram%20e%20gostaria%20de%20informaç%C3%B5es" target="_blank" rel="noopener noreferrer">
       AGENDE JÁ A SUA CONSULTA
     </a>
   </div>
@@ -231,23 +207,23 @@
     <h2>NOSSOS TRATAMENTOS</h2>
     <div class="galeria">
       <div class="item">
-        <img src="https://i.imgur.com/qgCbk2d.jpg" alt="Tratamentos Faciais">
+        <img src="https://i.imgur.com/qgCbk2d.jpg" alt="Tratamentos Faciais" />
         <a href="servicos.html">Tratamentos Faciais</a>
       </div>
       <div class="item">
-        <img src="https://i.imgur.com/QH2ldIF.jpg" alt="Harmonização Facial">
+        <img src="https://i.imgur.com/QH2ldIF.jpg" alt="Harmonização Facial" />
         <a href="servicos.html">Harmonização Facial</a>
       </div>
       <div class="item">
-        <img src="https://i.imgur.com/U0g78Mp.jpg" alt="Tratamentos Corporais">
+        <img src="https://i.imgur.com/U0g78Mp.jpg" alt="Tratamentos Corporais" />
         <a href="servicos.html">Tratamentos Corporais</a>
       </div>
       <div class="item">
-        <img src="https://i.imgur.com/G8RXjtm.jpg" alt="Sobrancelhas">
+        <img src="https://i.imgur.com/G8RXjtm.jpg" alt="Sobrancelhas" />
         <a href="servicos.html">Sobrancelhas</a>
       </div>
       <div class="item">
-        <img src="https://i.imgur.com/aBfW4lY.jpg" alt="Massagens">
+        <img src="https://i.imgur.com/aBfW4lY.jpg" alt="Massagens" />
         <a href="servicos.html">Massagens</a>
       </div>
     </div>
