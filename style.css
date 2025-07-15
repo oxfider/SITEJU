@@ -6,13 +6,11 @@ body {
     color: #333;
     line-height: 1.6;
 }
-
 header {
     background-color: #ffc0cb;
     text-align: center;
     padding: 0;
 }
-
 header img.logo {
   max-width: 1000px;
   width: 100%;
@@ -21,23 +19,19 @@ header img.logo {
   display: block;
   margin: 10px auto 0 auto;
 }
-
 nav {
     background-color: #ffb6c1;
     text-align: center;
     padding: 10px 0;
 }
-
 nav ul {
     list-style: none;
     margin: 0; padding: 0;
 }
-
 nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
@@ -45,11 +39,11 @@ nav ul li a {
     font-size: 1rem;
     padding: 5px 10px;
 }
-
 nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Menu link ativo */
 nav ul li a.ativo {
     text-decoration: underline;
     font-weight: bolder;
@@ -63,31 +57,25 @@ nav ul li a.ativo {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
 h2 {
     color: #ff69b4;
     margin-top: 0;
 }
-
 ul.servicos-list {
     columns: 2;
     padding-left: 20px;
 }
-
 ul.servicos-list li {
     margin-bottom: 8px;
 }
-
 a.whatsapp-link {
     color: #25D366;
     font-weight: bold;
     text-decoration: none;
 }
-
 a.whatsapp-link:hover {
     text-decoration: underline;
 }
-
 footer {
     background-color: #ffc0cb;
     color: white;
@@ -95,7 +83,6 @@ footer {
     padding: 20px 0;
     margin-top: 40px;
 }
-
 @media(max-width:768px) {
     nav ul li {
         display: block;
@@ -105,31 +92,4 @@ footer {
         columns: 1;
         padding-left: 0;
     }
-}
-
-/* Estilo do banner "AGENDE JÁ A SUA CONSULTA" */
-
-.top-banner {
-  background-color: #d81b60; /* cor de fundo do banner */
-  text-align: center;
-  padding: 12px 0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 10000;
-}
-
-.top-banner a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.15rem;
-  padding: 12px 28px;
-  background-color: #ad1457; /* cor do botão */
-  border-radius: 30px;
-  transition: background 0.3s ease;
-}
-
-.top-banner a:hover {
-  background-color: #880e4f; /* cor do botão no hover */
 }
